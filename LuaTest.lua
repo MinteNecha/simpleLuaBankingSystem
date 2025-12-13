@@ -27,12 +27,16 @@ function Get_balance()
 end
 
 function Bank()
-    print([[Good day
+    print([[
+---------------‐----------------------------------
+Good day
 What would you like to do:
 1.Withdraw
 2.Deposit
 3.Get Balance
-4.Cancel]])
+4.Cancel
+--------------------------------------------------
+]])
 
     local choice = tonumber(io.read())
     if choice==1 then

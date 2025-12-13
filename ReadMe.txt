@@ -1,0 +1,2 @@
+Developed this Lua based Bank system using my mobile device and no aid from any from of AI.
+Training myself in this new language with hard work and dedication, I added the dificulty of using my phone to improve my coding capability in unfriendly environment.
