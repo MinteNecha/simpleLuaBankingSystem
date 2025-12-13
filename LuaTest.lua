@@ -1,15 +1,24 @@
 local amount = 0
 
 function Withdraw(n)
-    amount=amount - n
-    print("Your new balance is " .. amount)
-    Bank()
+    if n > amount then
+        print("Insufficient funds")
+        Bank()
+    else
+     amount=amount - n
+       print("Your new balance is " .. amount)
+       Bank()
+    end
 end
 
 function Deposit(n)
-    amount=amount+n
-    print("Your new balance is " .. amount)
-    Bank()
+    if n<=0 then
+        print("That is an invalid amount to deposit")
+    else
+        amount=amount+n
+        print("Your new balance is " .. amount)
+        Bank()
+    end
 end
 
 function Get_balance()
