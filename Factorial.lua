@@ -9,6 +9,22 @@ function Factorial(x)
     end
 end 
 
-print("Enter a number to calculate the factorial")
-x = tonumber(io.read())
-print("The factorial of "..x.." is "..Factorial(x).."")
+function Calculator()
+    print([[--------------
+Good day, welcome to the Calculator:
+1.Calculate Factorial
+2.Cancel
+--------------
+]])
+input = tonumber(io.read())
+    if input == 1 then
+        print("Enter a number to calculate the factorial")
+        x = tonumber(io.read())
+        print("The factorial of "..x.." is "..Factorial(x).."")
+        Calculator()
+    elseif input == 2 then
+        return
+    end
+end
+
+Calculator()
