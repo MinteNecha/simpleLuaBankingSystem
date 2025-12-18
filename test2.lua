@@ -41,3 +41,9 @@ function Task2()
     print("The number of times 2 appears is: "..Count)
 
 end
+
+function ReverseArray(arr)
+    for i = #arr, 1, -1 do 
+        print(arr[i])
+    end
+end    
