@@ -6,8 +6,6 @@ Matrix = {
 
 ---[[
 function Task1()
-    Row = {}
-
     for i = 1, #Matrix do
         print(table.concat(Matrix[i]," "))
     end
@@ -34,4 +32,14 @@ function Task1_3()
         end
     end
     print("The largest value is: "..Max)
+end
+
+function Task2_1()
+    for i = 1, #Matrix do
+        local rowsum = 0
+        for j = 1, #Matrix[i] do
+            rowsum = rowsum + Matrix[i][j]
+        end
+        print("The sum of row "..i.." is: "..rowsum)
+    end
 end
