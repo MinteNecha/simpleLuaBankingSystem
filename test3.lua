@@ -9,10 +9,7 @@ function Task1()
     Row = {}
 
     for i = 1, #Matrix do
-        for j = 1, #Matrix[i] do 
-            Row.insert(Matrix)
-        end  
-        print(Row)
+        print(table.concat(Matrix[i]," "))
     end
 end
 --]]
