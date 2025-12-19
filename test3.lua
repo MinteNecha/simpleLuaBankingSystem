@@ -55,3 +55,15 @@ local column=1
         column = column + 1
     end
 end
+
+function countGreaterThan(matrix, value)
+    local greater = 0
+    for i = 1, #Matrix do 
+        for j = 1, #Matrix[i] do
+            if Matrix[i][j] > value then
+                greater = greater + 1
+            end
+        end    
+    end 
+    print("There are "..greater.." numbers greater than "..value)
+end    
