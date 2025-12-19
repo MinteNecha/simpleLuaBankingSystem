@@ -43,3 +43,15 @@ function Task2_1()
         print("The sum of row "..i.." is: "..rowsum)
     end
 end
+
+function Task2_2()
+local column=1
+    while (column<=#Matrix) do
+        local columnsum=0
+        for i = 1, #Matrix do 
+        columnsum = columnsum + Matrix[i][column]
+        end 
+        print("The sum of column "..column.." is: "..columnsum)
+        column = column + 1
+    end
+end
