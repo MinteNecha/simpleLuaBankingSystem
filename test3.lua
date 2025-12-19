@@ -13,3 +13,14 @@ function Task1()
     end
 end
 --]]
+
+function Task1_2()
+    Total = 0
+    for i = 1, #Matrix do
+        for j = 1, #Matrix[i] do
+            Total = Total + Matrix[i][j]
+        end
+    end 
+    print("The sum of all elemets is: "..Total)
+end
+
