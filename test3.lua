@@ -24,3 +24,14 @@ function Task1_2()
     print("The sum of all elemets is: "..Total)
 end
 
+function Task1_3()
+    Max=0
+    for i = 1, #Matrix do
+        for j = 1, #Matrix[i] do
+            if Matrix[i][j] > Max then
+                Max = Matrix[i][j]
+            end
+        end
+    end
+    print("The largest value is: "..Max)
+end
