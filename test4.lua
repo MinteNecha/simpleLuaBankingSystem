@@ -16,6 +16,7 @@ function Task4_2()
     for line in file:lines() do
         table.insert(list,line)
     end
+    file:close()
 ---[[    
     for i = 1, #list do
         total = total + tonumber(list[i])
@@ -28,5 +29,17 @@ function Task4_2()
     print("The average of the lis is: "..average)
     print("The total count is: "..count)
 --]]
-
 end    
+
+function Task4_3()
+    local file = io.open("marks.txt","r")
+    local count = 0
+
+    for line in file:lines() do
+        if tonumber(line) >= 50 then
+            count = count + 1
+        end
+    end
+    file:close()
+    print("The number marks above 50 are: "..count)
+end
